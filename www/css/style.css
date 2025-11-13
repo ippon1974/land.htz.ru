@@ -1,0 +1,105 @@
+body {
+	font-size: 100%;
+	font-family:  Verdana,"MS Sans Serif", Helvetica, Geneva, Arial, Verdana, sans-serif;
+}
+
+h1 {
+	font-size: 1.5em;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1.3em;
+	text-transform: uppercase;
+}
+
+div#page {
+	margin: 36px auto;
+	width: 90%;
+
+}
+
+div.blog {
+	margin: 0 auto 53px;
+	width: 93.75%;
+	
+}
+
+img.thumb {
+	margin:1px;
+	padding: 2px;
+	border: 1px solid #ccc;
+}
+
+
+div.image_gallery {
+            width: 10000px;
+            text-align: center;
+            max-width: 100%; /* контейнер не превышает 90% ширины экрана */
+            min-width: 500px;
+        }
+		
+        img {
+            float: left;
+            max-width: 31%;
+            height: auto;
+            padding: 1%; /* небольшие оступы для изображений */
+        }
+
+        @media screen and (max-width: 768px) { /* разрешение планшета */
+		
+		    h1 {
+	        font-size: 1.3em;
+            }
+			
+			h2 {
+	        font-size: 1.2em;
+            }
+			
+			div.blog .main p {
+	          font-size: 0.9em;
+             }
+			 
+			 div.blog .main table td {
+	          font-size: 0.9em;
+             }
+		
+		
+            div.image_gallery {
+                min-width: 320px;
+            }
+            img {
+                max-width: 48%;
+                height: auto;
+                padding: 1%; /* небольшие оступы для изображений */
+            }
+        }
+        @media screen and (max-width: 480px) { /* разрешение смартфона */
+            
+			h1 {
+	        font-size: 1.1em;
+            }
+			
+			h2 {
+	        font-size: 1.0em;
+            }
+			
+			div.blog .main p {
+	          font-size: 0.8em;
+             }
+			 
+			 div.blog .main table td {
+	          font-size: 0.8em;
+             }
+			
+            div.image_gallery {
+                width: 320px;
+                min-width: 320px;
+            }
+			
+            img {
+                max-width: 98%;
+                height: auto;
+                padding: 1%; /* небольшие оступы для изображений */
+            }
+        }
